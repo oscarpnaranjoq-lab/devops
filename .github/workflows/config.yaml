@@ -10,3 +10,10 @@ jobs:
     steps:
     - name: Hola Mundo
       run: echo "Hola Mundo Workflow"
+
+  other:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: LS
+      run: ls -al
