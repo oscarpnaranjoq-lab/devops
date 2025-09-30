@@ -11,6 +11,15 @@ jobs:
     - name: Hola Mundo
       run: echo "Hola Mundo Workflow"
 
+    - name: Crear Archivo
+      run: touch hola.txt
+
+    - name: Setear Texto
+      run: echo "Hola mundo ">> hola.txt
+
+    - name: Muestre el Texto
+      run: cat hola.txt
+
   other:
     runs-on: ubuntu-latest
 
